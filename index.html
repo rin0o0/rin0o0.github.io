@@ -15,8 +15,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Montserrat&display=swap" rel="stylesheet">
-  <title>Tecson Midterm Resume</title>
+  <title>Tecson Resume</title>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "S7VMgbv2q4bcU3M87",
+        });
+    })();
+    </script>
 
 </head>
 <body>
@@ -76,9 +84,7 @@
           <!-- BUTTON -->
           <div class="box-1">
             <a href="Tecson_CV.pdf" download="Tecson_CV" style="text-decoration: none;">
-              <div class="btn btn-one">
-                <span>Download CV</span>
-              </div>
+              <button class="dnl-btn">Download CV </button>
             </a>
           </div>
         </div>
@@ -97,7 +103,7 @@
           <p>
             <!-- paragraph 1 -->
             <span>
-              As of 2023, I find myself in the midst of my third year pursuing a Bachelor of 
+              As of 2024, I find myself in the midst of my fourth year pursuing a Bachelor of 
               Science in Information Technology degree. My journey into the world of IT was 
               driven by a fervent desire to create and contribute to the vast world of technology. 
               My primary focus is on software development and web development. Thus, I am eager to 
@@ -392,9 +398,9 @@
 
             <!--------------- CARD 6 --------------->
             <div class="img-card">
-                <img src="public/img/multimedia.png" >
+                <img src="public/img/MilkteaCompany.png" >
                 <div class="desc">
-                    <p>Multimedia Portfolio Website</p>
+                    <p>Sample HTML, CSS, JS Website for Milktea Business</p>
                 </div>
             </div>
         </div>
@@ -478,46 +484,47 @@
         <!-- DESCRIPTION -->
         <p class="description">I'd love to hear from you! :)</p>
 
-        <!-- INPUT CONTAINER/ CONTACT CONTENT-->
-        <div class="row input-container">
+         <!-- INPUT CONTAINER/ CONTACT CONTENT-->
+         <div class="row input-container">
           <!-- NAME -->
           <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input type="text" required />
-              <label>Name</label> 
-            </div>
+              <div class="styled-input wide">
+                  <input id="name" required />
+                  <label>Name</label> 
+              </div>
           </div>
 
           <!-- EMAIL -->
           <div class="col-md-6 col-sm-12">
-            <div class="styled-input">
-              <input type="text" required />
-              <label>Email</label> 
-            </div>
+              <div class="styled-input">
+                  <input id="email_ad" required />
+                  <label>Email</label> 
+              </div>
           </div>
 
           <!-- PHONE NUMBER -->
           <div class="col-md-6 col-sm-12">
-            <div class="styled-input" style="float:right;">
-              <input type="text" required />
-              <label>Phone Number</label> 
-            </div>
+              <div class="styled-input" style="float:right;">
+                  <input id="phone_no" required />
+                  <label>Phone Number</label> 
+              </div>
           </div>
 
           <!-- MESSAGE -->
           <div class="col-xs-12">
-            <div class="styled-input wide">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
+              <div class="styled-input wide">
+                  <textarea id="message" required></textarea>
+                  <label>Message</label>
+              </div>
           </div>
 
           <!-- BUTTON -->
           <div class="col-xs-12">
-            <div class="btn btn-two submit-btn">
-              <span>Send Message</span>
-            </div>
+              <button id="send-btn" class="send-btn">Send Message</button>
           </div>
+      </div>
+
+          
         </div>
       </div>
     </section>  

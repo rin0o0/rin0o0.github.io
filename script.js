@@ -54,3 +54,40 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
       counter = 1;
     }
   }, 4000);
+
+
+  //===========================SENDING TO EMAIL FUNCTION=============================
+
+function SendMail(){
+  var params = {
+      from_name : document.getElementById("name").value,
+      phone_number : document.getElementById("phone_no").value,
+      message : document.getElementById("message").value,
+      email : document.getElementById("email_ad").value
+  }
+  emailjs.send("service_tsb95n1","template_zh0v6xy", params);
+}
+
+//===========================BUTTON ANIMATION===================================
+send_btn = document.querySelector(".send-btn");
+
+send_btn.onclick = function(){
+    this.innerHTML = "<div class='loader'></div>";
+    setTimeout(() => {
+        this.innerHTML ="Message Sent";
+        this.style = "background: black; color:white; pointer-events:none;";
+    },2000)
+    SendMail();
+}
+
+
+
+dnl_btn = document.querySelector(".dnl-btn");
+
+dnl_btn.onclick = function(){
+    this.innerHTML = "<div class='loader'></div>";
+    setTimeout(() => {
+        this.innerHTML ="Downloaded";
+        this.style = "background: grey; color:black; pointer-events:none;";
+    },1500)
+}
