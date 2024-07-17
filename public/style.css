@@ -516,7 +516,7 @@ nav li:first-child{
 
 /* #######---- PYTHON------######## */
 .skill_bar .bar .py{
-    width: 90%;
+    width: 30%;
     animation: py 15s;
     animation-iteration-count: infinite;
 }
@@ -526,13 +526,13 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 90%;
+        width: 30%;
     }
 }
 
 /* #######----- HTML-------######## */
 .skill_bar .bar .html{
-    width: 90%;
+    width: 80%;
     animation: html 15s;
     animation-iteration-count: infinite;
 }
@@ -542,7 +542,7 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -564,7 +564,7 @@ nav li:first-child{
 
 /* #######----- KIVY-------######## */
 .skill_bar .bar .kivy{
-    width: 75%;
+    width: 40%;
     animation: kivy 15s;
     animation-iteration-count: infinite;
 }
@@ -574,13 +574,13 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 75%;
+        width: 40%;
     }
 }
 
 /* #######----- KIVYMD-------######## */
 .skill_bar .bar .kivymd{
-    width: 75%;
+    width: 20%;
     animation: kivymd 15s;
     animation-iteration-count: infinite;
 }
@@ -590,13 +590,13 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 75%;
+        width: 20%;
     }
 }
 
 /* #######------ CSS--------######## */
 .skill_bar .bar .csharp{
-    width: 70%;
+    width: 50%;
     animation: csharp 15s;
     animation-iteration-count: infinite;
 }
@@ -606,7 +606,7 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -628,7 +628,7 @@ nav li:first-child{
 
 /* #######------ SQL--------######## */
 .skill_bar .bar .sql{
-    width: 50%;
+    width: 30%;
     animation: sql 15s;
     animation-iteration-count: infinite;
 }
@@ -638,7 +638,7 @@ nav li:first-child{
     }
     
     50%, 100%{
-        width: 50%;
+        width: 30%;
     }
 }
 
