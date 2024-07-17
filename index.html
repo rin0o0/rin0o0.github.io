@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="public/img/icon.ico" type="image/x-icon" >
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css">
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Montserrat&display=swap" rel="stylesheet">
+  <title>Tecson Midterm Resume</title>
+
+
+</head>
+<body>
+  <header>
+    <!-- NAV BAR -->
+    <nav>
+      <!-- HIDDEN SIDEBAR NAV FOR RESPONSIVENESS -->
+      <ul class="sidebar">
+          <li onclick= hideSidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="26" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+      </ul>
+      <!-- MAIN NAV BAR -->
+      <ul>
+          <li><a class="logo" ><img src="public/img/Logo_White.png" alt="Logo"   width="60" height="60"></a></li>
+          <li class="hideOnMobile"><a href="#Home">Home</a></li>
+          <li class="hideOnMobile"><a href="#About">About</a></li>
+          <li class="hideOnMobile"><a href="#Education">Education</a></li>
+          <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
+          <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+          <li class="hideOnMobile"><a href="#Certificates">Certificates</a></li>
+          <li class="hideOnMobile"><a href="#contact-section">Contact</a></li>
+          <li class="menu-button" onclick= showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="26" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+
+    </nav> 
+
+  </header>
+  <main>
+    
+    <!-- ------------------------------------------------------------------------ -->
+    <!------------------------------- H O M E -------------------------------------->
+    <!-- ------------------------------------------------------------------------- -->
+
+    <section id="Home" style = "background-color: #F4F1E8;" >
+      <div class="flex-container">
+        <!-- IMAGE -->
+        <div class="flex-left">
+          <img src="public/img/Tina-Picture.png"  class="cover" alt="side-image" width="100%">
+        </div>
+
+        <!-- TITLE,TEXT -->
+        <div class="flex-right">
+          <h1 class = "home-title" style="color: #D16210;"><span>Hello,</span> I am Tina!</h1>
+          <p>
+            I am an aspiring web developer hailing from Las Pinas, Philippines, with an 
+            unyielding commitment to learning and growth. A keen eye for good design 
+            complements my strong work ethic, fueling my enthusiasm to broaden my skill 
+            set and expand my knowledge. I am driven by the passion to create exceptional 
+            and interactive websites and am excited to embark on this journey of 
+            self-improvement and innovation.</p>
+          <!-- BUTTON -->
+          <div class="box-1">
+            <a href="Tecson_CV.pdf" download="Tecson_CV" style="text-decoration: none;">
+              <div class="btn btn-one">
+                <span>Download CV</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-------------------------- a b o u t m e  ---------------------------------->
+    <!-- ---------------------------------------------------------------------- -->
+
+    <section id="About" style = "background-color: #9B4819;" >
+      <div class="about-flex-container">
+        <!-- TITLE AND TEXT -->
+        <div class="about-flex-left">
+          <h1 class ="about-title" style="color: #F4F1E8;">About me.</h1>
+          <p>
+            <!-- paragraph 1 -->
+            <span>
+              As of 2023, I find myself in the midst of my third year pursuing a Bachelor of 
+              Science in Information Technology degree. My journey into the world of IT was 
+              driven by a fervent desire to create and contribute to the vast world of technology. 
+              My primary focus is on software development and web development. Thus, I am eager to 
+              gain practical experience in these areas through internships, allowing me to apply what 
+              I've learned in the classroom to real-world projects.
+            </span>
+            <!-- paragraph 2 -->
+            <span>  
+              Beyond coding and technology, there's a creative side of me that thrives. 
+              I have a passion for creative writing, which allows me to express my thoughts 
+              and ideas in unique ways. I also dabble in digital painting, even though I may 
+              not consider myself a master artist. Additionally, I find solace in crocheting, 
+              a hobby that allows me to create tangible pieces of art with my hands.
+            </span>
+            <!-- paragraph 3 -->
+            <span>
+              Outside the realm of technology and creativity, I dream of traveling the world.
+              My aspiration is to explore different cultures and become adaptable in various 
+              environments. This journey will not only broaden my horizons but also fuel my passion
+              for learning and experiencing the rich diversity our world has to offer. 
+              In every endeavor, I aim to be flexible, open-minded, and always ready to embrace 
+              new challenges and opportunities.
+            </span>
+          </p>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="about-flex-right">
+          <img src="public/img/Tina-Chinatown.png" class="cover" alt="side-image" width="100%">
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!----------------------------- e d u c a t i o n --------------------------->
+    <!-- --------------------------------------------------------------------- -->
+
+    <section id="Education" style = " background-color: #F4F1E8;">
+    <!-- EDUC TITLE -->
+    <div class="single-title-div">
+      <h1 class="section-title" style="color: #314028; padding-bottom: 1rem;">Education</h1>
+    </div>
+      <!-- EDUC CARD CONTAINER -->
+      <div class="educ__container container grid">
+
+        <!-- CARD 1  -->
+        <div class="educ__card">
+          <div class="educ__border"></div>
+
+          <!-- CARD CONTENT -->
+          <div class="educ__content">
+            <!-- icon -->
+            <div class="educ__icon">
+              <i class="ri-home-heart-line"></i>
+            </div>
+            <!-- Text -->
+            <h2 class="educ__title">Junior High</h2>
+            <p class="educ__description">
+              I graduated from St. Therese School in Las Pinas City in 2018, where I consistently 
+              achieved being an honors student. These years shaped my work ethic and ignited 
+              my passion for learning.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2  -->
+        <div class="educ__card">
+          <div class="educ__border"></div>
+
+          <!-- CARD CONTENT -->
+          <div class="educ__content">
+            <!-- icon -->
+            <div class="educ__icon">
+              <i class="ri-school-line"></i>
+            </div>
+            <!-- Text -->
+            <h2 class="educ__title">Senior High</h2>
+            <p class="educ__description">
+              During this time, I maintained being a  Consistent High Honors Student in 
+              pursuing the Technical-Vocational-Livelihood (TVL) ICT Strand. This choice 
+              provided me with an introduction to web development, setting the stage for 
+              my interest in the field of technology.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 3  -->
+        <div class="educ__card">
+          <div class="educ__border"></div>
+
+          <!-- CARD CONTENT -->
+          <div class="educ__content">
+            <!-- icon -->
+            <div class="educ__icon">
+              <i class="ri-graduation-cap-fill"></i>
+            </div>
+            <!-- Text -->
+            <h2 class="educ__title">College</h2>
+            <p class="educ__description">
+              I graduated from St. Dominic College of Asia, Bacoor City, in 2025, achieving 
+              Consistent Honors Student status. Pursuing a Bachelor of Science in Information
+              Technology, I honed my programming skills and earned Dean's List recognition 
+              during my first and second years, preparing me for a successful career in IT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!----------------------------- SKILLLS AND PROFICIENCES ---------------------------->
+    <!-- ------------------------------------------------------------------------------ -->
+
+    <section id="Skills" style = "background-color:#314028;">
+      
+      <!-- MAIN CONTAINER -->
+      <div class="skills_container">
+        <!-- HEADING -->
+        <div class="single-title-div">
+          <h1 class="section-title" style="color: #F4F1E8;">My Skills</h1>
+        </div>
+        
+        <!-- CONTAINER FOR ALL BAR COMPONENTS -->
+        <div class="skills_main">
+            <!-- BAR CONTENT 1 -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>Python</p>
+                    <P>90%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="py"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 2  -->
+            <div class="skill_bar">
+              <!-- SKILL INFO -->
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 3  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>CSS</p>
+                    <P>80%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 4  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>Kivy</p>
+                    <P>75%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="kivy"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 5  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>KivyMD</p>
+                    <P>75%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="kivymd"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 6  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>C#</p>
+                    <P>70%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="csharp"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 7  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>Java</p>
+                    <P>65%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="java"></span>
+                </div>
+            </div>
+
+            <!-- BAR CONTENT 8  -->
+            <div class="skill_bar">
+                <!-- SKILL INFO -->
+                <div class="info">
+                    <p>MySQL</p>
+                    <P>50%</P>
+                </div>
+                <!-- BAR PROGRESSION -->
+                <div class="bar">
+                    <span class="sql"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!------------------------------- M Y ---P R O J E C T S ----------------------------->
+    <!-- ------------------------------------------------------------------------------ -->
+
+    <section id="Projects" style="background-color: #F4F1E8;">
+      <!-- MAIN CONTAINER -->
+      <div class="projects-main">
+        <!-- HEADING -->
+        <div class="desc-title-div"> 
+          <h1 class="section-title" style="color: #D16210;">My Projects</h1>
+        </div>
+        
+        <!-- SUBTEXT CATEGORIES -->
+        <div class="categories" style="color: #D16210;"">
+            <ul>
+                <li>Website Development</li>
+                <li>App Development</li>
+                <li>Mobile Development</li>
+            </ul>
+        </div>
+        <!-- PROJECTS CONTAINER -->
+        <div class="projects-container">
+            <!--------------- CARD 1 --------------->
+            <div class="img-card">
+                <img src="public/img/Backsafe.png" >
+                <div class="desc">
+                    <p>Backsafe Mobile App Design</p>
+                </div>
+            </div>
+            <!--------------- CARD 2 --------------->
+            <div class="img-card">
+                <img src="public/img/bardic.png" >
+                <div class="desc">
+                    <p>Custom Discord Music Bot</p>
+                </div>
+            </div>
+
+            <!--------------- CARD 3 --------------->
+            <div class="img-card">
+                <img src="public/img/fetcher.png" >
+                <div class="desc">
+                    <p>Fetcher Mobile App with Kivy Python</p>
+                </div>
+            </div>
+
+            <!--------------- CARD 4 --------------->
+            <div class="img-card">
+                <img src="public/img/idris.png" >
+                <div class="desc">
+                    <p>SDCA Business Center System with Java in Apache Netbeans</p>
+                </div>
+            </div>
+
+            <!--------------- CARD 5 --------------->
+            <div class="img-card">
+                <img src="public/img/westview.png" >
+                <div class="desc">
+                    <p>Basic CRUD Enrollment System with JS, HTML, CSS</p>
+                </div>
+            </div>
+
+            <!--------------- CARD 6 --------------->
+            <div class="img-card">
+                <img src="public/img/multimedia.png" >
+                <div class="desc">
+                    <p>Multimedia Portfolio Website</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!------------------------------- M Y ----- CERTIFICATES ----------------------------->
+    <!-- ------------------------------------------------------------------------------ -->
+    <section id ="Certificates" style="background-color: #9B4819;">
+      <!-- Container for ALL -->
+      <div class="cert-container">
+        <!-- Heading and Description -->
+        <div class="desc-title-div">
+          <h1 class="section-title" style="color: #F4F1E8;">My Certificates</h1>
+        </div>
+        <p class="description">Here are some of my personal achievements.</p>
+
+        <!-- Carousel -->
+        <div class="slider">
+          <div class="slides">
+            <!-- Radio Buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!-- Images -->
+
+            <!-- img 1 -->
+            <div class="img first">
+              <img src="/public/img/CreotecICT.jpg" alt="">
+            </div>
+            <!-- img 2 -->
+            <div class="img">
+              <img src="/public/img/DominiXodeCert.jpg" alt="">
+            </div>
+            <!-- img 3 -->
+            <div class="img">
+              <img src="/public/img/dominixodePIC.jpg" alt="">
+            </div>
+            <!-- img 4 -->
+            <div class="img">
+              <img src="/public/img/mobilitycert.png" alt="">
+            </div>
+            <!-- img 5 -->
+            <div class="img">
+              <img src="/public/img/mobilitypic.jpg" alt="">
+            </div>
+            
+            <!-- Auto navigation -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+            </div>
+            <!-- Manual Navigation -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------ -->
+    <!------------------------------- C O N T A C T --- M E  ----------------------------->
+    <!-- ------------------------------------------------------------------------------ -->
+    <section id="contact-section" style="background-color: #F4F1E8">
+      <!-- CONTACT CONTAINER FOR ALL CONTACT COMPONENTS -->
+      <div class="contact-container">
+        <!-- HEADING -->
+        <div class="desc-title-div">
+          <h1 class="section-title" style="color: #314028; font-size: 3rem ;">Let's Get in Touch!</h1>
+        </div>
+        <!-- DESCRIPTION -->
+        <p class="description">I'd love to hear from you! :)</p>
+
+        <!-- INPUT CONTAINER/ CONTACT CONTENT-->
+        <div class="row input-container">
+          <!-- NAME -->
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <input type="text" required />
+              <label>Name</label> 
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+              <input type="text" required />
+              <label>Email</label> 
+            </div>
+          </div>
+
+          <!-- PHONE NUMBER -->
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input" style="float:right;">
+              <input type="text" required />
+              <label>Phone Number</label> 
+            </div>
+          </div>
+
+          <!-- MESSAGE -->
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <textarea required></textarea>
+              <label>Message</label>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+          <div class="col-xs-12">
+            <div class="btn btn-two submit-btn">
+              <span>Send Message</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+  </main>
+  <!-- ---------------------------------------FOOTER------------------------------------------- -->
+  <footer>
+    <!-- FOOTER CONTAINER -->
+    <div class="footer">
+      <!-- FOOTER CONTENT -->
+      <div class="footer-content">
+          <br>
+          <br>
+          <!-- FOOTER PARAGRAPH -->
+          <p>For inquiries and opportunities, feel free to reach out to me at christinaelletecson@ gmail.com or (123) 456-7890. We can also connect on <a href="https://www.linkedin.com/login"  style="color:#D16210;">LinkedIn: Christina Gabrielle Tecson</a>. 
+            I am currently located in Las Pinas City, Metro Manila, Philippines.</p>
+          <!-- SOCMED LINKS -->
+          <ul class="socials">
+              <li><a href="https://www.facebook.com/gaby.tecson/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/m_o.rii/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/rin0o0"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/christina-gabrielle-tecson-46688921b/"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </footer>  
+  <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
+

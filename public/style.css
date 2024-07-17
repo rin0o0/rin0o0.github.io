@@ -1,0 +1,1253 @@
+/* $colors: (
+    "darkorange": #9B4819,
+    "orange": #D16210,
+    "brown": #422815,
+    "darkgreen": #153828,
+    "black": #191919,
+    "olivegreen": #314028,
+    "white":      #F4F1E8,
+    "gray-dark":  $gray-800
+    
+); */
+
+/* ######################################################################## */
+* {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+/* SECTION TITLE */
+.section-title{
+    font-family: 'Martian Mono', monospace;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    width: max-content;
+}
+
+/* SECTION TITLE DIV FOR NO DESCRIPTION */
+.single-title-div{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+/* SECTION TITLE DIV FOR TITLE W/ DESCRIPTION */
+.desc-title-div{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+/* IMG CLASS */
+.cover{
+    object-fit: cover;
+    width: 700px;
+    height: 700px;
+}    
+
+
+/* TITLE STYLING FOR TYPING ANIMATIONS */
+.section-title::before,
+.section-title::after,
+.home-title::before,
+.home-title::after,
+.about-title::before,
+.about-title::after{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* TYPING ANIMATIONS */
+
+@keyframes typewriter{
+    0%{
+        left: 0%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+
+/* =================================================== 
+                        NAV BAR
+===================================================== */
+
+/*-------MAIN NAV BAR------*/
+.logo {
+	margin: 0;
+	font-size: 1em;
+    padding-left: 10px;
+}
+nav{
+    background-color: #314028;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 5rem;
+}
+nav a {
+    height: 100%;
+	padding: 0 15px ;
+    display: flex;
+    align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+    color: #F4F1E8;
+	font-size: 1.15rem;
+    
+}
+nav a:hover {
+	color: #D16210;
+}
+
+nav a:active {
+	color: #D16210;
+}
+
+nav a:focus {
+	color: #D16210;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+/*-------RESPONSIVE SIDEBAR------*/
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #314028;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%
+}
+
+.menu-button{
+    display: none;
+}
+/* =================================================== 
+                        HOME
+===================================================== */
+
+/* -------HOME TITLE AND ANIMATION----------- */
+.home-title{   
+    font-size: 3.75rem;
+    font-family: 'Martian Mono', monospace;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    position: relative;
+    width: max-content;
+}
+
+.home-title::before{
+    background-color: #F4F1E8;
+    animation:
+        typewriter 8s steps(17) 2s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+.home-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 8s steps(17) 2s forwards,
+        blink 750ms steps(17) infinite;
+        animation-iteration-count: infinite;
+}
+
+
+/* -------HOME COMPONENTS----------- */
+
+
+.flex-container  {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*-------PARAGRAPH AND PARAGRAPH CONTAINER-----*/
+.flex-right{
+    width: 60%;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 5rem;
+    padding-top: 16rem;
+}
+
+.flex-container .flex-right p
+{   
+    font-size: 1.60rem;
+    text-align: justify;
+    color: #422815;
+    align-content: right;
+    padding-right: 5rem;
+}
+
+.flex-container .flex-right span
+{   
+    color: #422815;
+}
+
+/*-------IMAGE CONTAINER-----*/
+.flex-left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* ------------DOWNLOAD CV BUTTON----------------- */
+.box-1 {
+    height: 10%;
+    width: 90%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+.btn-one {
+    /* color: #314028; */
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.50rem;
+    color: #422815;
+}
+.btn-one span {
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(155, 72, 25,0.5);
+    border-bottom-color: rgba(155, 72, 25,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+.btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(155, 72, 25,0.2);
+}
+.btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+
+/* =================================================== 
+                    ABOUT ME
+===================================================== */
+
+/* ------------ABOUT TITLE AND ANIMATION----------- */
+
+.about-title{
+    font-family: 'Martian Mono', monospace;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+    width: max-content;
+    margin-left: 5rem;
+}
+
+.about-title::before{
+    background-color: #9B4819;
+    animation:
+        typewriter 6s steps(9) 3s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+.about-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 6s steps(9) 3s forwards,
+        blink 750ms steps(9) infinite;
+        animation-iteration-count: infinite;
+}
+
+
+/* ------------ABOUT COMPONENTS ----------- */
+
+.about-flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+/*-------PARAGRAPH AND PARAGRAPH CONTAINER-----*/
+
+.about-flex-left{
+    width: 60%;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    
+}
+.about-flex-container .about-flex-left p
+{   
+    font-size: 1.20rem;
+    margin-left: 5rem;
+    text-align: justify;
+    color: #F4F1E8;
+    align-content: right;
+    text-indent: 4rem;
+}
+.about-flex-container p span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/*-------IMAGE CONTAINER-----*/
+.about-flex-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* =================================================== 
+                    EDUCATION
+===================================================== */
+
+/*---------------EDUCATION TITLE ANIMATION------------- */
+#Education .section-title::before{
+    background-color: #F4F1E8;
+    animation:
+        typewriter 6s steps(9) 3s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+#Education .section-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 6s steps(9) 3s forwards,
+        blink 750ms steps(9) infinite;
+        animation-iteration-count: infinite;
+}
+
+/* ---------------EDUCATION COMPONENTS------------------- */    
+.container{
+    padding: 5rem;
+}
+
+
+.educ__container{
+    justify-content: center;
+    padding-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    gap: 5rem;
+    padding-bottom: 10rem;
+    
+}
+
+/*-------EDUC CARD AND CONTENT-----*/
+.educ__card{
+    position: relative;
+}
+
+.educ__content{
+    height: 95%;
+    background-color: #F4F1E8;
+    border: 4px solid #422815;
+    padding: 1rem 1rem 3rem;
+    z-index: 5;
+    position: relative;
+    transition: background-color .4s, border .4s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.educ__border{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    border: 4px solid #D16210;
+    top:0;
+    left: 0;
+    transition: transform .4s;
+}
+
+.educ__card:hover .educ__border{
+    transform: translate( 2rem, 2rem);
+}
+
+/*-------EDUC ICON STYLINE-----*/
+.educ__icon{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 15rem;
+}
+
+.educ__icon i{
+    font-size: 10rem;
+    color: #D16210;
+    position: relative;
+    z-index: 5;
+    border-top: 1rem solid #314028;
+    
+}
+
+/*-------EDUC TITLE AND DESCRIPTION-----*/
+.educ__title{
+    font-size: 2.40rem;
+    margin-bottom: 1.25rem;
+    font-family: 'Martian Mono', monospace;
+    color: #314028;
+    
+}
+
+.educ__description{
+    font-size: 1.15rem;
+    text-align: justify;
+    color: #422815;
+    text-indent: 50px;
+}
+
+/* =================================================== 
+                SKILLLS AND PROFICIENCES
+===================================================== */
+
+/*---------------SKILLLS TITLE ANIMATION------------- */
+#Skills .section-title::before{
+    background-color: #314028;
+    animation:
+        typewriter 6s steps(9) 3s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+#Skills .section-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 6s steps(9) 3s forwards,
+        blink 750ms steps(9) infinite;
+        animation-iteration-count: infinite;
+}
+/* ---------------SKILLLS COMPONENTS------------------- */   
+
+.skills_container{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    padding-top: 1rem;
+    margin-top: 0;
+    
+}
+
+/*-------SKILL BARS STYLING-----*/
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #F4F1E8;
+}
+
+.skill_bar .bar{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(66, 40, 21, 0.9);
+    
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #D16210;
+    border-radius: 25px;
+}
+/* ----------MY SKILLS----------- */
+
+/* #######---- PYTHON------######## */
+.skill_bar .bar .py{
+    width: 90%;
+    animation: py 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes py {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 90%;
+    }
+}
+
+/* #######----- HTML-------######## */
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 90%;
+    }
+}
+
+/* #######----- CSS-------######## */
+.skill_bar .bar .css{
+    width: 80%;
+    animation: css 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 80%;
+    }
+}
+
+/* #######----- KIVY-------######## */
+.skill_bar .bar .kivy{
+    width: 75%;
+    animation: kivy 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes kivy {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 75%;
+    }
+}
+
+/* #######----- KIVYMD-------######## */
+.skill_bar .bar .kivymd{
+    width: 75%;
+    animation: kivymd 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes kivymd {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 75%;
+    }
+}
+
+/* #######------ CSS--------######## */
+.skill_bar .bar .csharp{
+    width: 70%;
+    animation: csharp 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes csharp {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 70%;
+    }
+}
+
+/* #######------ JAVA--------######## */
+.skill_bar .bar .java{
+    width: 65%;
+    animation: java 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 65%;
+    }
+}
+
+/* #######------ SQL--------######## */
+.skill_bar .bar .sql{
+    width: 50%;
+    animation: sql 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }
+    
+    50%, 100%{
+        width: 50%;
+    }
+}
+
+/* =================================================== 
+                    MY PROJECTS
+===================================================== */
+
+/*---------------PROJECTS TITLE ANIMATION------------- */
+#Projects .section-title::before{
+    background-color: #F4F1E8;
+    animation:
+        typewriter 6s steps(11) 3s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+#Projects .section-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 6s steps(11) 3s forwards,
+        blink 750ms steps(11) infinite;
+        animation-iteration-count: infinite;
+}
+
+/* ---------------PROJECTS COMPONENTS------------------- */   
+#Projects{
+    width: 100%;
+    height: auto;
+    padding: 60px 12%;
+    padding-top: 0;
+    padding-bottom: 5rem;
+}
+
+/* ----PROJECT CATEGORIES------ */
+.projects-main .categories{
+    width: 100%;
+    margin: 50px 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.projects-main .categories ul {
+    display: flex;
+}
+.projects-main .categories ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.40rem;
+}
+
+
+.projects-main .projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+/* -------PROJECT CARDS---------- */
+.img-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-container .img-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* -----PROJECT ON HOVER DESCRIPTION------- */
+.img-card .desc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #D16210;
+    display: grid;
+    place-items: center;
+    color: #F4F1E8;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all .3s ease-out;
+    font-size: 1.30rem;
+    text-align: center;
+}
+.img-card:hover .desc{
+    opacity: .9;
+    top: 0;
+}
+
+/* =================================================== 
+                    MY CERTIFICATES
+===================================================== */
+
+/*---------------CERT TITLE ANIMATION------------- */
+#Certificates .section-title::before{
+    background-color: #9B4819;
+    animation:
+        typewriter 8s steps(15) 2s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+#Certificates .section-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 8s steps(15) 2s forwards,
+        blink 750ms steps(15) infinite;
+        animation-iteration-count: infinite;
+}
+
+/* ---------------CERT COMPONENTS------------------- */   
+.cert-container{
+    padding-bottom: 5rem; 
+}
+.cert-container .description{
+    width: 100%;
+    margin: 30px 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.40rem;
+    color:#F4F1E8;
+}
+
+#Certificates{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ----------IMAGE CAROUSEL--------- */
+.slider{
+    width: 1000px;
+    height:600px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display:flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.img{
+    width: 20%;
+    transition: 2s;
+}
+
+.img img {
+    width: 1000px;
+    height:600px;
+    
+}
+
+/* -------FOR MANUAL NAVIGATION------ */
+
+.navigation-manual{
+    position: absolute;
+    width: 1000px;
+    margin-top: 35rem;
+    display: flex;
+    justify-content:center;
+
+}
+.manual-btn{
+    border: 2px solid #314028;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background-color: #314028;
+    opacity: 1;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+/* -------FOR AUTOMATIC NAVIGATION------ */
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 35rem;
+    display: flex;
+    justify-content:center;
+}
+
+.navigation-auto div{
+    border: 2px solid #314028;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #314028;
+    opacity: 1;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #314028;
+    opacity: 1;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #314028;
+    opacity: 1;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #314028;
+    opacity: 1;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #314028;
+    opacity: 1;
+}
+
+/* =================================================== 
+                    CONTACT ME
+===================================================== */
+
+/*---------------CONTACT TITLE ANIMATION------------- */
+#contact-section .section-title::before{
+    background-color: #F4F1E8;
+    animation:
+        typewriter 8s steps(19) 2s forwards;
+        animation-iteration-count: infinite;
+        
+}
+
+#contact-section .section-title::after{
+    width: 0.125em;
+    background: #422815;
+    animation:
+        typewriter 8s steps(19) 2s forwards,
+        blink 750ms steps(19) infinite;
+        animation-iteration-count: infinite;
+}
+
+/* ---------------CONTACT COMPONENTS------------------- */   
+
+#contact-section{
+    padding-bottom: 20rem;
+}
+
+.contact-container .description{
+    width: 100%;
+    margin: 30px 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.40rem;
+    color: #314028;
+}
+
+/* ----------INPUT STYLING---------- */
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #F4F1E8;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.styled-input label {
+    color: #F4F1E8;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #9B4819;
+    color: #F4F1E8;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+
+}
+
+input[type=checkbox] + label {
+    color: #ffffff;
+    font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+    color: #f00;
+    font-style: normal;
+}
+
+/* ------------SEND MESSAGE BUTTON----------------- */
+
+.submit-btn {
+    border-radius: 60px;
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn-two {
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.30rem;
+    color: #422815;
+}
+.btn-two span {
+    transition: all 0.3s;
+}
+.btn-two::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(155, 72, 25,0.5);
+    border-bottom-color: rgba(155, 72, 25,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-two:hover span {
+    letter-spacing: 2px;
+}
+.btn-two:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+.btn-two::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(155, 72, 25,0.2);
+}
+
+.btn-two:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+
+/* =================================================== 
+                    FOOTER
+===================================================== */
+.footer {
+    clear: both;
+    position: relative;
+    height: 250px;
+    margin-top: -200px;
+    background: #314028;
+    bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #F4F1E8;
+}
+
+/* ----SOC MED ICONS STYLING------ */
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #D16210;
+    border: 1.1px solid #D16210;
+    
+}
+
+/* =================================================== 
+                    Media Queries
+================================================== */
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .home-title{
+        font-size: 2.49rem;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .sidebar{
+        width: 100%
+    }
+
+
+}
+
